@@ -1,0 +1,38 @@
+{
+  "name": "meal-planner",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "16": "^0.0.2",
+    "font-awesome": "^4.7.0",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "sass": "^1.82.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "build-css": "sass src/:build/ --no-source-map",
+    "watch-css": "npm run build-css && sass src/:build/ --watch",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://arimai.github.io/meal-planner",
+  "description": "- A web application to plan what you eat daily in accordance to dietary needs.   - Please find the [demo here](https://arimai.github.io/meal-planner/#/).  - This project was bootstrapped with [create-react-app](https://github.com/facebookincubator/create-react-app)  - This project does not make use of any external CSS frameworks. Excuse the [sassiness](http://sass-lang.com/). :wink:  - This project has been designed mobile-first and makes use of [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) extensively.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
